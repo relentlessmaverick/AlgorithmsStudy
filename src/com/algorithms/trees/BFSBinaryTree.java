@@ -28,7 +28,6 @@ public class BFSBinaryTree {
 		root.left.right = new Node(25);
 		root.right.left = new Node(30);
 		root.right.right = new Node(35);
-
 		BFSBinaryTree i = new BFSBinaryTree();
 		System.out.println("Breadth First Search : ");
 		i.levelOrderQueue(root);
