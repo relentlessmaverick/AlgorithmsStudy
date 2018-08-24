@@ -3,6 +3,7 @@ package com.datastructures.lists;
 import java.util.LinkedList;
 import java.util.Queue;
 
+/** Implementing Stack Using Queues */
 public class StackUsingQueues {
 
 	Queue<Integer> inQueue;
