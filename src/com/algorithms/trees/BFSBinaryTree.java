@@ -2,7 +2,9 @@ package com.algorithms.trees;
 
 import java.util.LinkedList;
 import java.util.Queue;
-
+/*
+ * This program traverses a binary tree using level-order-traversal OR breadth-first-search
+ */
 public class BFSBinaryTree {
 
 	public void levelOrderQueue(Node root) {
