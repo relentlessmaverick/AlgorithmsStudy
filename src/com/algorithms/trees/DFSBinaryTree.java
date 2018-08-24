@@ -1,7 +1,9 @@
 package com.algorithms.trees;
 
 import java.util.Stack;
-
+/*
+ * This program traverses a binary tree using depth first search
+ */
 public class DFSBinaryTree {
 	public void DFS(Node root) {
 		Stack<Node> s = new Stack<Node>();
