@@ -42,4 +42,9 @@ public class StackUsingQueues {
 		}
 		return inQueue.peek();
 	}
+	
+    /** Returns whether the stack is empty. */
+    public boolean empty() {
+        return inQueue.isEmpty() && outQueue.isEmpty();
+    }
 }
