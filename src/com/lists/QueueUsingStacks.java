@@ -1,4 +1,4 @@
-package com.datastructures.lists;
+package com.lists;
 
 import java.util.Stack;
 

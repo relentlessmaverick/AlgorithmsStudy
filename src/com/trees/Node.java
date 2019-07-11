@@ -1,4 +1,4 @@
-package com.algorithms.trees;
+package com.trees;
 
 public class Node {
 	int data;

@@ -1,4 +1,4 @@
-package com.datastructures.lists;
+package com.lists;
 /**
  * This is simple priorityQ Implementation using array
  * @author vikrantmathure
