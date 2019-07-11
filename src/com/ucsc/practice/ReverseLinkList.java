@@ -6,8 +6,8 @@ package com.ucsc.practice;
  *
  */
 public class ReverseLinkList {
-	class LLNode{
-		LLNode next;
+	class Node{
+		Node next;
 	}
 	
 	// Demo Example
@@ -16,14 +16,14 @@ public class ReverseLinkList {
 	// 3->2->1
 	// 4->3->2->1
 	
-	public LLNode reverseLinkedList(LLNode head){
+	public Node reverseLinkedList(Node head){
 		
-		LLNode p1 = head;
-		LLNode p2 = head.next;
+		Node p1 = head;
+		Node p2 = head.next;
 		head.next = null;
 		
 		while(p1!=null && p2!=null){
-			LLNode tempLLNode = p2.next;
+			Node tempLLNode = p2.next;
 			p2.next = p1;
 			p1 = p2;
 			p2 = tempLLNode;

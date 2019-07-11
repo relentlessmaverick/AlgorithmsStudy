@@ -1,5 +1,9 @@
 package com.datastructures.lists;
-
+/**
+ * This is simple priorityQ Implementation using array
+ * @author vikrantmathure
+ *
+ */
 public class PriorityQ {
 	// array in sorted order, from max at 0 to min at size-1
 	private int maxSize;
