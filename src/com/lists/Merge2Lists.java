@@ -1,7 +1,7 @@
 package com.lists;
 
 /**
- * Merges 2 lists given the head references
+ * Merges 2 sorted lists given the head references
  * 
  * @author vikrantmathure
  *
