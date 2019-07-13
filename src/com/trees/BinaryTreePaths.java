@@ -17,7 +17,7 @@ public class BinaryTreePaths {
 	 * @param root
 	 * @param paths
 	 */
-	public static void build_paths(String path, TreeNode root, LinkedList<String> paths) {
+	public static void build_paths(String path, TreeNode root, List<String> paths) {
 		if (root != null) {
 			path = path + Integer.toString(root.val);
 			if (root.left == null && root.right == null) {
@@ -32,7 +32,7 @@ public class BinaryTreePaths {
 
 	public static List<String> binaryTreePaths(TreeNode root) {
 		List<String> paths = new LinkedList<String>();
-		build_paths("", root, new LinkedList<String>());
+		build_paths("", root, paths);
 		return paths;
 	}
 
