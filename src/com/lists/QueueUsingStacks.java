@@ -23,7 +23,7 @@ public class QueueUsingStacks {
     }
     
     /** Removes the element from in front of queue and returns that element. */
-    public int pop() {
+    public int remove() {
         if(!outStack.isEmpty()) {
             return outStack.pop();
         }else{
