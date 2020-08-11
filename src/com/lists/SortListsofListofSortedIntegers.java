@@ -10,6 +10,8 @@ import java.util.List;
  * this can also be stated as merge k iterators
  * @author vikrantmathure
  *
+ * Time Complexity  = k*O(N) - where N is average size of the list
+ * Space Complexity = O(k*N) = k*O(N)
  */
 public class SortListsofListofSortedIntegers {
 
