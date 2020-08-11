@@ -10,6 +10,10 @@ import java.util.List;
  * this can also be stated as merge k iterators
  * @author vikrantmathure
  *
+ * Remarks:
+ * - What is the time complexity?
+ * - What is the space complexity?
+ * - Any alternative solutions you can think of?
  */
 public class SortListsofListofSortedIntegers {
 
