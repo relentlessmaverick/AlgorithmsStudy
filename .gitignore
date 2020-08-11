@@ -1,0 +1,14 @@
+# Compiled source & other eclipse files #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.project
+*.settings
+*.project
+*.classpath
+target
+bin
