@@ -74,6 +74,34 @@ public class SortListsofListofSortedIntegers {
 												 Arrays.asList(100, 200, 300, 400, 500)
 												 );
 		mergeKLists(list);
+
+		System.out.println(sortListOfSortedLists(list));
+	}
+
+	/**
+	 * brute force: copy all integers into one list and sort it
+	 * N - max size of list
+	 * k - # of lists
+	 * T(n) = O(kNlogkN)
+	 * S(n) = O(kN)
+	 * @param input
+	 * @return
+	 */
+	public static List<Integer> sortListOfSortedLists(List<List<Integer>> input) {
+
+		List<Integer> listToSort = new ArrayList<>();
+
+		input.forEach(list -> list.forEach(n -> listToSort.add(n)));
+
+		Integer[] arrToSort = new Integer[listToSort.size()];
+
+		for (int i = 0; i < arrToSort.length; i++) {
+			arrToSort[i] = listToSort.get(i);
+		}
+
+		Arrays.sort(arrToSort);
+
+		return Arrays.asList(arrToSort);
 	}
 }
 
