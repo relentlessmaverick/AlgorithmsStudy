@@ -1,6 +1,7 @@
 package com.lists;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 /**
  * sort a list of multiple sorted lists
@@ -74,6 +75,8 @@ public class SortListsofListofSortedIntegers {
 		mergeKLists(list);
 
 		System.out.println(sortListOfSortedLists(list));
+
+		System.out.println(sortListOfSortedListsWithStreams(list));
 	}
 
 	/**
@@ -94,6 +97,14 @@ public class SortListsofListofSortedIntegers {
 		Collections.sort(listToSort);
 
 		return listToSort;
+	}
+
+	public static List<Integer> sortListOfSortedListsWithStreams(List<List<Integer>> input) {
+		return input
+				.stream()
+				.flatMap(Collection::stream)
+				.sorted()
+				.collect(Collectors.toList());
 	}
 }
 
