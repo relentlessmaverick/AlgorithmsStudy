@@ -1,9 +1,7 @@
 package com.lists;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
+
 /**
  * sort a list of multiple sorted lists
  * this can also be stated as merge k sorted lists
@@ -93,15 +91,9 @@ public class SortListsofListofSortedIntegers {
 
 		input.forEach(list -> list.forEach(n -> listToSort.add(n)));
 
-		Integer[] arrToSort = new Integer[listToSort.size()];
+		Collections.sort(listToSort);
 
-		for (int i = 0; i < arrToSort.length; i++) {
-			arrToSort[i] = listToSort.get(i);
-		}
-
-		Arrays.sort(arrToSort);
-
-		return Arrays.asList(arrToSort);
+		return listToSort;
 	}
 }
 
