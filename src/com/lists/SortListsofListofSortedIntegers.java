@@ -1,9 +1,8 @@
 package com.lists;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
+import java.util.stream.Collectors;
+
 /**
  * sort a list of multiple sorted lists
  * this can also be stated as merge k sorted lists
@@ -74,6 +73,38 @@ public class SortListsofListofSortedIntegers {
 												 Arrays.asList(100, 200, 300, 400, 500)
 												 );
 		mergeKLists(list);
+
+		System.out.println(sortListOfSortedLists(list));
+
+		System.out.println(sortListOfSortedListsWithStreams(list));
+	}
+
+	/**
+	 * brute force: copy all integers into one list and sort it
+	 * N - max size of list
+	 * k - # of lists
+	 * T(n) = O(kNlogkN)
+	 * S(n) = O(kN)
+	 * @param input
+	 * @return
+	 */
+	public static List<Integer> sortListOfSortedLists(List<List<Integer>> input) {
+
+		List<Integer> listToSort = new ArrayList<>();
+
+		input.forEach(list -> list.forEach(n -> listToSort.add(n)));
+
+		Collections.sort(listToSort);
+
+		return listToSort;
+	}
+
+	public static List<Integer> sortListOfSortedListsWithStreams(List<List<Integer>> input) {
+		return input
+				.stream()
+				.flatMap(Collection::stream)
+				.sorted()
+				.collect(Collectors.toList());
 	}
 }
 
