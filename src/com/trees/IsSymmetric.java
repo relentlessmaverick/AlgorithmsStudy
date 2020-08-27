@@ -26,8 +26,8 @@ public class IsSymmetric {
 	
 	/**
 	 * Using Recursive Approach
-	 * @param Node p
-	 * @param Node q
+	 * @param ListNode p
+	 * @param ListNode q
 	 * @return boolean result
 	 */
 	private boolean isSymmetric(Node p, Node q) {
